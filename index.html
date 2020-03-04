@@ -23,8 +23,13 @@
   </noscript>
   <script>
     var searchParams = new URLSearchParams(document.location.search);
-    var url = searchParams.get("url");
-    document.location = url;
+    var go = searchParams.get("go");
+    if (go != null) {
+      document.location = go;
+    }
+    else {
+      document.location = 'https://github.com';
+    }
   </script>
 </head>
 
