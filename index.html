@@ -2,14 +2,15 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Title of the document</title>
+<title>GitHub</title>
+  <script>
+    var searchParams = new URLSearchParams(document.location.search);
+    var url = searchParams.get("url");
+    document.location = url;
+  </script>
 </head>
 
 <body>
-Content of the document......
-  <script>
-    document.location = 'https://github.com/dzhgenti/dzhgenti.github.io';
-  </script>
 </body>
 
 </html>
